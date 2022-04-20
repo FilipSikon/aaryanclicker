@@ -1,0 +1,90 @@
+.rubrik{
+    display: flex;
+    justify-content: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.aaryanpicture{
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.aaryanpicture:active{
+    width: 32%;
+
+}
+.counters{
+    display: flex;   
+    align-items: center;
+    flex-direction: column;
+    
+}
+.clicker{
+    width: 10%;
+}
+.counter{
+    position: relative;
+    border: none;
+    width: 150px;
+    height: 40px;
+    top: 25px;
+    background-color: white;
+    /* Med position:relative kan man ändra positionen på saken med top, left, right, bottom */
+}
+.upgrade{
+    position: relative;
+    border: none;
+    height: 40px;
+    width: 150px;
+    top: 40px;
+    border-radius: 10px;
+    /* border-radius gör knappen mer rund*/
+    background-color: yellow;
+    cursor: pointer;
+}
+.upgrade:hover{
+    background-color: rgb(236, 236, 15);
+    /* när man har musen på upgrade (knappen) */
+}
+.upgrade:active{
+    background-color: rgb(238, 255, 0);
+    /* när man trycker på upgrade (knappen) */
+}
+.Donera{
+    position: relative;
+    border: none;
+    width: 150px;
+    height: 40px;
+    top: 50px;
+    border-radius: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+.Donera:hover{
+    background-color: rgb(236, 236, 15);
+}
+.Donera:active{
+    background-color: rgb(238, 255, 0);
+}
+.poor{
+    visibility: hidden;
+    position: absolute;
+    /* position: absolute gör så att saken inte tar hänsyn till alla andra saker och kommer 
+    ligga på den platsen där den första saken i hemsidan läggs och då använder man top, left, right, bottom 
+    för att ändra position */
+    background-color: crimson;
+    padding: 3%;
+    top: 10px;
+    cursor: pointer;
+}
+.scam{
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(15, 224, 95);
+    padding: 3%;
+    top: 10px;
+    cursor: pointer;
+}
